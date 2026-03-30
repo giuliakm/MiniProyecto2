@@ -35,4 +35,17 @@ public class Refugio {
         System.out.println("Gato registrado correctamente");
     }
 
+        public void mostrarAnimales() {
+
+        if (animales.isEmpty()) {
+            System.out.println("No hay animales registrados");
+            return;
+        }
+
+        for (Animal a : animales) {
+            a.mostrarInfo();
+            System.out.println("----------------");
+        }
+    }
+
 }
