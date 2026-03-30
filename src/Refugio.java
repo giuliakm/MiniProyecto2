@@ -58,4 +58,30 @@ public class Refugio {
 
         return null;
     }
+
+        public void cambiarEstado(int id) {
+
+        Animal a = buscarAnimal(id);
+
+        if (a == null) {
+            System.out.println("Animal no encontrado");
+            return;
+        }
+
+        a.setEstado("ADOPTADO");
+        System.out.println("Estado cambiado a ADOPTADO");
+    }
+
+    public void ejecutarSonido(int id) {
+
+        Animal a = buscarAnimal(id);
+
+        if (a == null) {
+            System.out.println("Animal no encontrado");
+            return;
+        }
+
+        a.hacerSonido();
+    }
+
 }
