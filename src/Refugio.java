@@ -48,4 +48,14 @@ public class Refugio {
         }
     }
 
+        public Animal buscarAnimal(int id) {
+
+        for (Animal a : animales) {
+            if (a.getId() == id) {
+                return a;
+            }
+        }
+
+        return null;
+    }
 }
